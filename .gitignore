@@ -1,0 +1,11 @@
+#Игнорировать .env
+.env
+
+#Игнорировать кэш Python
+__pycache__/
+
+#Игнорировать кэш pytest
+.pytest_cache/
+
+# Игнорировать настройки VS Code
+.vscode/
