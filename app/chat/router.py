@@ -1,7 +1,7 @@
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Request, Depends
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from typing import List, Dict
+from typing import Dict
 from app.chat.dao import MessagesDAO
 from app.chat.schemas import MessageRead, MessageCreate
 from app.users.dao import UsersDAO

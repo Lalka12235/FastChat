@@ -9,11 +9,11 @@
 <body>
 <div class="chat-container">
     <div class="user-list" id="userList">
-        <!-- Добавляем фиксированный элемент "Избранное" -->
+        <!-- Сначала выводим "Избранное" -->
         <div class="user-item" data-user-id="{{ user.id }}">
             Избранное
         </div>
-        <!-- Выводим остальных пользователей, исключая текущего пользователя -->
+        <!-- Выводим остальных пользователей -->
         {% for chat in users_all %}
             {% if chat.id != user.id %}
                 <div class="user-item" data-user-id="{{ chat.id }}">
@@ -36,12 +36,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    // Передаем идентификатор текущего пользователя в JavaScript
-    const currentUserId = parseInt("{{ user.id }}", 10);
-</script>
-
 <script src="/static/js/chat.js"></script>
 </body>
 </html>
