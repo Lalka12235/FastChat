@@ -12,5 +12,5 @@ class Settings(BaseSettings):
 settings = Settings()
 
 
-def get_auth_data():
+def get_auth_date():
     return {"secret_key": settings.SECRET_KEY, "algorithm": settings.ALGORITHM}
